@@ -585,14 +585,14 @@ h3.title01 {
 h2.title01 {
   position: relative;
   text-align: center;
-  color: black;
+  color: green;
   font-weight: normal;
   line-height: 1.8em;
   width: 190px;
   padding: 0;
   font-weight: bold;
   border: 1px solid #ccc;
-  border: 5px solid red;
+  border-bottom: 5px solid red;
   background-color: azure;
   margin: 23px auto -20px;
 }
@@ -600,42 +600,43 @@ h2.title02 {
   margin: 50px auto 0;
   position: relative;
   text-align: center;
-  color: black;
+  color: green;
   font-weight: normal;
   line-height: 1.8em;
   width: 305px;
   padding: 0;
   font-weight: bold;
   border: 1px solid #ccc;
-  border: 5px solid red;
+  border-bottom: 5px solid red;
   background-color: azure;
 }
 h2.title03 {
   margin: 25px auto 25px;
   position: relative;
   text-align: center;
-  color: black;
+  color: green;
   font-weight: normal;
   line-height: 1.8em;
   width: 305px;
   padding: 0;
   font-weight: bold;
   border: 1px solid #ccc;
-  border: 5px solid red;
+
+  border-bottom: 5px solid red;
   background-color: azure;
 }
 h2.title04 {
   margin: 25px auto 25px;
   position: relative;
   text-align: center;
-  color: black;
+  color: green;
   font-weight: normal;
   line-height: 1.8em;
   width: 305px;
   padding: 0;
   font-weight: bold;
   border: 1px solid #ccc;
-  border: 5px solid red;
+  border-bottom: 5px solid red;
   background-color: azure;
 }
 h6.title02 {
@@ -995,7 +996,7 @@ h6.title02 {
     height: 30vh;
   }
   h2.title02 {
-    width: 170px;
+    width: 195px;
   }
   h2.title04 {
     width: 170px;
@@ -1076,8 +1077,8 @@ h6.title02 {
   .service-section h2 {
     padding: 0;
     margin-top: 50px;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
   }
 
   .w-100 {
@@ -1134,7 +1135,7 @@ h6.title02 {
   }
   .service-section .services .service-box {
     display: block;
-    margin-left: 100px;
+    margin-left: 80px;
   }
   .service-section .service1 {
     margin-top: 0px;
