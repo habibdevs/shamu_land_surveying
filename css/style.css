@@ -314,7 +314,7 @@ header img {
   font-size: 20px;
   position: relative;
   overflow: hidden;
-  z-index: +9999;
+  z-index: +1;
 }
 .gallery-part button::before {
   position: absolute;
@@ -555,8 +555,11 @@ header img {
 
 .card h5 {
   text-align: center;
+  font-size: 15px;
 }
-
+.last-card {
+  margin-left: 145px;
+}
 .card h6 {
   text-align: center;
   font-size: 12px;
@@ -590,14 +593,15 @@ header img {
   position: absolute;
   content: "";
   width: 5px;
-  height: 500px;
+  height: 808px;
   background-color: #16b831;
   left: 50%;
-  bottom: 10%;
+  bottom: 3%;
 }
 .card-body p {
   font-size: 12px;
   text-align: center;
+  display: grid;
 }
 .card-section h3 {
   font-size: 20px;
@@ -912,11 +916,10 @@ h6.title02 {
   color: #fff;
   text-align: center;
   margin-top: 71px;
-  margin-left: 65px;
 }
 .office1 p {
   margin-left: -100px;
-  text-align: center;
+  text-align: left;
   line-height: 10px;
   margin-top: 10px;
   margin-left: auto;
@@ -974,6 +977,31 @@ h6.title02 {
   top: -8px;
 }
 
+@media (min-width: 320px) and (max-width: 400px) {
+  .service-section h2:before {
+    width: 130px !important;
+    height: 5px;
+    left: 33%;
+  }
+  .service-section h2::after {
+    width: 130px !important;
+    height: 5px;
+    left: 33%;
+  }
+  .gallery-heading-part h2::before {
+    width: 130px !important;
+    height: 5px;
+    left: 33%;
+    top: -10px;
+  }
+
+  .gallery-heading-part h2::after {
+    width: 130px !important;
+    height: 5px;
+    left: 33%;
+    top: 25px;
+  }
+}
 @media (min-width: 320px) and (max-width: 576px) {
   .carousel {
     height: 30vh;
@@ -1003,6 +1031,44 @@ h6.title02 {
   .navbar-toggler {
     margin-left: 43%;
   }
+  .navbar-nav .nav-item .contact::after {
+    transition: all 0.5s;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    right: 50%;
+    margin: auto;
+    background: transparent;
+    content: "";
+    height: 0px;
+  }
+  .navbar-nav .nav-item .data::after {
+    background: transparent;
+    content: "";
+    height: 0px;
+  }
+  .navbar-nav .nav-item .photos::after {
+    transition: all 0.5s;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    right: 50%;
+    margin: auto;
+    background: transparent;
+    content: "";
+    height: 0px;
+  }
+  .navbar-nav .nav-item .service::after {
+    transition: all 0.5s;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    right: 50%;
+    margin: auto;
+    background: transparent;
+    content: "";
+    height: 0px;
+  }
   header img {
     width: 28%;
   }
@@ -1022,25 +1088,25 @@ h6.title02 {
     font-weight: 500;
   }
   .service-section h2:before {
-    width: 130px;
+    width: 165px;
     height: 5px;
     left: 33%;
   }
 
   .service-section h2::after {
-    width: 130px;
+    width: 165px;
     height: 5px;
     left: 33%;
   }
   .gallery-heading-part h2::before {
-    width: 130px;
+    width: 165px;
     height: 5px;
     left: 33%;
     top: -10px;
   }
 
   .gallery-heading-part h2::after {
-    width: 130px;
+    width: 165px;
     height: 5px;
     left: 33%;
     top: 25px;
@@ -1048,9 +1114,10 @@ h6.title02 {
   .w-100 {
     height: 30vh;
   }
+
   .banner-section .banner-text h4 {
     display: block;
-    color: #fff;
+    color: yellow;
     font-size: 11px;
     margin-left: 0px;
     margin-top: 20px;
@@ -1059,11 +1126,14 @@ h6.title02 {
     font-size: 34px;
     display: block;
     color: #fff;
-    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-width: 1px;
+  }
+  .last-card {
+    margin-left: 0px;
   }
   .banner-section .banner-text {
     position: absolute;
-    top: 44px;
+    top: 150px;
     left: 50px;
   }
   .service-section .services {
@@ -1155,7 +1225,7 @@ h6.title02 {
     margin-left: 100px;
   }
   .office h5 {
-    left: 30%;
+    left: 34%;
     font-size: 18px;
   }
   .office h6 {
@@ -1165,10 +1235,10 @@ h6.title02 {
   .office1 h6 {
     font-size: 14px;
     margin-top: 0;
-    margin-left: 32%;
+    margin-left: 36%;
   }
   hr {
-    margin: 130px 0 0 0;
+    margin: 0px;
   }
   .fa-phone {
     font-size: 10px;
@@ -1222,6 +1292,329 @@ h6.title02 {
   .navbar-nav .nav-item .home::before {
     position: relative;
     height: 0px;
+  }
+  .sticky-top {
+    position: -webkit-sticky;
+    position: relative;
+    top: 0;
+    z-index: 1020;
+  }
+}
+
+@media (min-width: 1080px) and (max-width: 1710px) {
+  .banner-section .banner-text {
+    left: 640px !important;
+  }
+  .width25 {
+    width: 530px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1440px) {
+  .banner-section .banner-text {
+    left: 640px !important;
+  }
+  .width25 {
+    width: 530px;
+  }
+  .banner-section .banner-text h1 {
+    font-size: 70px;
+  }
+  .banner-section .banner-text {
+    left: 410px !important;
+  }
+  .banner-section .banner-text h4 {
+    margin-left: 0;
+  }
+  .carousel-inner {
+    height: 58vh;
+  }
+  .video-part video {
+    padding: 0;
+    margin-left: -150px;
+  }
+  .office1 h6 {
+    margin-left: 25px;
+  }
+  .service-section h2 {
+    padding: 0;
+  }
+  .service-section h2:before {
+    left: 34%;
+  }
+  .service-section h2::after {
+    left: 34%;
+  }
+  .gallery-heading-part h2::before {
+    left: 35%;
+  }
+  .gallery-heading-part h2::after {
+    left: 35%;
+  }
+  header img {
+    width: 100px;
+    margin-right: 40px;
+  }
+}
+@media (min-width: 577px) and (max-width: 992px) {
+  header {
+    padding: 0px;
+  }
+  .navbar > .container,
+  .navbar > .container-fluid,
+  .navbar > .container-lg,
+  .navbar > .container-md,
+  .navbar > .container-sm,
+  .navbar > .container-xl,
+  .navbar > .container-xxl {
+    display: flow-root;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar-toggler {
+    margin-left: 300px;
+  }
+  .video-part video {
+    width: 500px;
+  }
+  .last-card {
+    margin-left: 0;
+  }
+  .card-section::after {
+    position: relative;
+    content: "";
+    width: 0px;
+    height: 0px;
+  }
+  .banner-section {
+    height: 36vh;
+  }
+  .carousel-item {
+    height: 36vh;
+  }
+  .service-section h2 {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+  .service-section h2:before {
+    width: 150px;
+    left: 35%;
+  }
+  .service-section h2::after {
+    width: 150px;
+    left: 35%;
+  }
+  .service-section .services .service {
+    display: block;
+    width: 100vw;
+    text-align: center;
+  }
+  .service-section .service1 {
+    margin-top: 0px;
+    padding: 0px 0px;
+    color: rgb(6, 61, 9);
+    text-align: center;
+    margin: 0 auto;
+  }
+  .service-section .service1 .service-box {
+    margin-top: -15px;
+  }
+  .service-section .services {
+    margin-top: 0;
+    background-color: azure;
+    display: contents;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 0px 0px;
+  }
+  .service-section .services i {
+    padding: 0;
+    display: none;
+  }
+  .service-section .services ul li {
+    cursor: pointer;
+    padding: 5px 0;
+  }
+  .service-section .service {
+    margin-top: 20px;
+    padding: 0;
+    color: rgb(6, 61, 9);
+  }
+  .gallery-heading-part {
+    padding: 0;
+  }
+  .gallery-heading-part h2::before {
+    width: 175px;
+    left: 34%;
+    height: 4px;
+  }
+  .gallery-heading-part h2::after {
+    width: 175px;
+    left: 34%;
+    height: 4px;
+  }
+  .site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #fff;
+  }
+  .site-footer h1,
+  p {
+    text-align: center;
+  }
+  .site-footer h1,
+  p {
+    text-align: center;
+  }
+  .office h5 {
+    left: 34%;
+    font-size: 18px;
+  }
+  .office1 h6 {
+    font-size: 14px;
+    margin-top: 0;
+    margin-left: 36%;
+  }
+  .office1 p {
+    margin-left: -100px;
+    text-align: center;
+    line-height: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+  }
+  .fa-phone {
+    margin-right: 10px;
+  }
+  .fa-envelope {
+    margin-right: 10px;
+  }
+  .copyright-text {
+    margin: 15px 0 0 0;
+  }
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+  }
+  .social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    margin: 10px 0 0 0;
+  }
+  .navbar-nav .nav-item .home::before {
+    transition: all 0.5s;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: transparent;
+    content: "";
+    height: 0px;
+  }
+  .navbar-nav .nav-item .service::after {
+    transition: all 0.5s;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: transparent;
+    content: "";
+    height: 0px;
+  }
+  .navbar-nav .nav-item .photos::after {
+    transition: all 0.5s;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: transparent;
+    content: "";
+    height: 0px;
+  }
+  .navbar-nav .nav-item .contact::after {
+    transition: all 0.5s;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: transparent;
+    content: "";
+    height: 0px;
+  }
+  .navbar-nav .nav-item .data::after {
+    transition: all 0.5s;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    right: 50%;
+    margin: auto;
+    background: transparent;
+    content: "";
+    height: 0px;
+  }
+  .card img {
+    width: 33%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .card {
+    background-color: azure;
+    border-radius: 4%;
+    width: 45vw;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .gallery-heading-part h2 {
+    padding: 25px 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .g-item {
+    z-index: +1;
+    width: 45vh;
+    margin: 25px auto 0;
+  }
+  .gallery-part button {
+    background-color: transparent;
+    width: 135px;
+    height: 40px;
+    margin: 25px auto 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 20px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin-right: 10px;
+    text-align: right;
+  }
+  .banner-section .banner-text {
+    position: absolute;
+    top: 170px;
+    left: 60px;
+  }
+  .banner-section .banner-text h1 {
+    font-size: 40px;
+    display: block;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+  }
+  .banner-section .banner-text h4 {
+    color: yellow;
+    font-size: 14px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .fancybox-bg,
+  .fancybox-inner,
+  .fancybox-outer,
+  .fancybox-stage {
+    width: 96vw;
   }
   .sticky-top {
     position: -webkit-sticky;
