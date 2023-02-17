@@ -1101,18 +1101,21 @@ h6.title02 {
   .gallery-heading-part h2::before {
     width: 165px;
     height: 5px;
-    left: 33%;
+    left: 32%;
     top: -10px;
   }
 
   .gallery-heading-part h2::after {
     width: 165px;
     height: 5px;
-    left: 33%;
+    left: 32%;
     top: 25px;
   }
   .w-100 {
     height: 30vh;
+  }
+  .office1 p {
+    text-align: center;
   }
 
   .banner-section .banner-text h4 {
