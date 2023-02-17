@@ -219,24 +219,7 @@ header img {
   margin-top: 70px;
   position: relative;
 }
-.service-section h2::after {
-  width: 300px;
-  height: 5px;
-  bottom: -10px;
-  left: 38%;
-  background-color: rgb(6, 61, 9);
-  position: absolute;
-  content: "";
-}
-.service-section h2:before {
-  width: 300px;
-  height: 5px;
-  top: -10px;
-  left: 38%;
-  background-color: rgb(6, 61, 9);
-  position: absolute;
-  content: "";
-}
+
 .service-section .service {
   margin-top: 20px;
   padding: 50px 0px;
@@ -255,12 +238,14 @@ header img {
 }
 .service-section .services i {
   padding: 10px 10px;
+  color: rgb(88, 5, 5);
 }
 .service-section .services .service {
   display: block;
 }
 .service-section .services ul li {
   cursor: pointer;
+  font-size: 22px;
 }
 .service-section .services .service-box {
   display: block;
@@ -269,38 +254,10 @@ header img {
 .gallery-heading-part {
   text-align: center;
   background-color: azure;
-  padding: 20px 0;
+  padding: 50px 0 25px 0px;
+  color: blue;
 }
-.gallery-heading-part h2 {
-  text-align: center;
-  color: rgb(6, 61, 9);
-  letter-spacing: -0.8px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 40px 0;
-  position: relative;
-  margin-top: 30px;
-}
-.gallery-heading-part h2::after {
-  position: absolute;
-  width: 300px;
-  height: 5px;
-  top: 15px;
-  left: 38%;
-  background-color: rgb(6, 61, 9);
-  position: absolute;
-  content: "";
-}
-.gallery-heading-part h2::before {
-  position: absolute;
-  width: 300px;
-  height: 5px;
-  bottom: 15px;
-  left: 38%;
-  background-color: rgb(6, 61, 9);
-  position: absolute;
-  content: "";
-}
+
 .gallery-part button {
   background-color: transparent;
   width: 210px;
@@ -623,6 +580,62 @@ h3.title01 {
   font-weight: bold;
   border: 1px solid #ccc;
   border-bottom: 2px solid #16b831;
+  background-color: azure;
+}
+h2.title01 {
+  position: relative;
+  text-align: center;
+  color: black;
+  font-weight: normal;
+  line-height: 1.8em;
+  width: 190px;
+  padding: 0;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border: 5px solid red;
+  background-color: azure;
+  margin: 23px auto -20px;
+}
+h2.title02 {
+  margin: 50px auto 0;
+  position: relative;
+  text-align: center;
+  color: black;
+  font-weight: normal;
+  line-height: 1.8em;
+  width: 305px;
+  padding: 0;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border: 5px solid red;
+  background-color: azure;
+}
+h2.title03 {
+  margin: 25px auto 25px;
+  position: relative;
+  text-align: center;
+  color: black;
+  font-weight: normal;
+  line-height: 1.8em;
+  width: 305px;
+  padding: 0;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border: 5px solid red;
+  background-color: azure;
+}
+h2.title04 {
+  margin: 25px auto 25px;
+  position: relative;
+  text-align: center;
+  color: black;
+  font-weight: normal;
+  line-height: 1.8em;
+  width: 305px;
+  padding: 0;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border: 5px solid red;
   background-color: azure;
 }
 h6.title02 {
@@ -977,34 +990,18 @@ h6.title02 {
   top: -8px;
 }
 
-@media (min-width: 320px) and (max-width: 400px) {
-  .service-section h2:before {
-    width: 130px !important;
-    height: 5px;
-    left: 33%;
-  }
-  .service-section h2::after {
-    width: 130px !important;
-    height: 5px;
-    left: 33%;
-  }
-  .gallery-heading-part h2::before {
-    width: 130px !important;
-    height: 5px;
-    left: 33%;
-    top: -10px;
-  }
-
-  .gallery-heading-part h2::after {
-    width: 130px !important;
-    height: 5px;
-    left: 33%;
-    top: 25px;
-  }
-}
 @media (min-width: 320px) and (max-width: 576px) {
   .carousel {
     height: 30vh;
+  }
+  h2.title02 {
+    width: 170px;
+  }
+  h2.title04 {
+    width: 170px;
+  }
+  h2.title03 {
+    width: 190px;
   }
   .carousel-inner {
     height: 30vh;
@@ -1082,35 +1079,7 @@ h6.title02 {
     font-size: 16px;
     font-weight: 500;
   }
-  .gallery-heading-part h2 {
-    padding: 0;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  .service-section h2:before {
-    width: 165px;
-    height: 5px;
-    left: 33%;
-  }
 
-  .service-section h2::after {
-    width: 165px;
-    height: 5px;
-    left: 33%;
-  }
-  .gallery-heading-part h2::before {
-    width: 165px;
-    height: 5px;
-    left: 32%;
-    top: -10px;
-  }
-
-  .gallery-heading-part h2::after {
-    width: 165px;
-    height: 5px;
-    left: 32%;
-    top: 25px;
-  }
   .w-100 {
     height: 30vh;
   }
@@ -1155,19 +1124,23 @@ h6.title02 {
     text-align: center;
   }
   .service-section .services i {
-    padding: 10px 10px;
-    display: none;
+    padding: 7px;
+    color: rgb(141, 7, 7);
   }
   .service-section .services ul li {
     cursor: pointer;
     padding: 5px 0;
+    text-align: left;
+  }
+  .service-section .services .service-box {
+    display: block;
+    margin-left: 140px;
   }
   .service-section .service1 {
     margin-top: 0px;
     padding: 0px 0px;
     color: rgb(6, 61, 9);
     text-align: center;
-    margin: 0 auto;
   }
   .service-section .service1 .service-box {
     margin-top: -15px;
@@ -1238,7 +1211,7 @@ h6.title02 {
   .office1 h6 {
     font-size: 14px;
     margin-top: 0;
-    margin-left: 36%;
+    margin-left: 32%;
   }
   hr {
     margin: 0px;
@@ -1341,18 +1314,7 @@ h6.title02 {
   .service-section h2 {
     padding: 0;
   }
-  .service-section h2:before {
-    left: 34%;
-  }
-  .service-section h2::after {
-    left: 34%;
-  }
-  .gallery-heading-part h2::before {
-    left: 35%;
-  }
-  .gallery-heading-part h2::after {
-    left: 35%;
-  }
+
   header img {
     width: 100px;
     margin-right: 40px;
@@ -1399,14 +1361,7 @@ h6.title02 {
     margin-top: 30px;
     font-size: 16px;
   }
-  .service-section h2:before {
-    width: 150px;
-    left: 35%;
-  }
-  .service-section h2::after {
-    width: 150px;
-    left: 35%;
-  }
+
   .service-section .services .service {
     display: block;
     width: 100vw;
@@ -1428,10 +1383,7 @@ h6.title02 {
     display: contents;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 0px 0px;
   }
-  .service-section .services i {
-    padding: 0;
-    display: none;
-  }
+
   .service-section .services ul li {
     cursor: pointer;
     padding: 5px 0;
@@ -1444,16 +1396,7 @@ h6.title02 {
   .gallery-heading-part {
     padding: 0;
   }
-  .gallery-heading-part h2::before {
-    width: 175px;
-    left: 34%;
-    height: 4px;
-  }
-  .gallery-heading-part h2::after {
-    width: 175px;
-    left: 34%;
-    height: 4px;
-  }
+
   .site-footer {
     background-color: #26272b;
     padding: 45px 0 20px;
@@ -1571,11 +1514,7 @@ h6.title02 {
     margin: 0 auto;
     margin-bottom: 20px;
   }
-  .gallery-heading-part h2 {
-    padding: 25px 0;
-    font-size: 16px;
-    font-weight: 500;
-  }
+
   .g-item {
     z-index: +1;
     width: 45vh;
