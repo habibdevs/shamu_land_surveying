@@ -1,24 +1,27 @@
 let item = document.querySelector(".item");
 let itemm = document.querySelector(".itemm");
 let itemmm = document.querySelector(".itemmm");
+let itemmmm = document.querySelector(".itemmmm");
 
 let text = item.innerHTML;
 let textt = itemm.innerHTML;
 let texttt = itemmm.innerHTML;
-
-console.log(text);
+let textttt = itemmmm.innerHTML;
 
 let textArr = text.split("");
 let textArrr = textt.split("");
 let textArrrr = texttt.split("");
+let textArrrrr = textttt.split("");
 
 let counter = -1;
 let counterr = -1;
 let counterrr = -1;
+let counterrrr = -1;
 
 item.innerHTML = "";
 itemm.innerHTML = "";
 itemmm.innerHTML = "";
+itemmmm.innerHTML = "";
 
 function typejs() {
   if (counter < text.length) {
@@ -71,21 +74,36 @@ function typejsss() {
     }
   }
 }
+function typejssss() {
+  if (counterrrr < textttt.length) {
+    counterrrr++;
+    itemmmm.innerHTML += textttt.charAt(counterrrr);
+
+    console.log(itemmmm.innerHTML);
+
+    textArrrrr = textttt.split("");
+  } else {
+    textArrrrr.pop("");
+    console.log(textArrrrr.pop(""));
+    itemmmm.innerHTML = textArrrrr.join("");
+    if (textArrrrr.length == 0) {
+      counterrrr = -1;
+    }
+  }
+}
 
 let stop = setInterval(function () {
   typejs();
 }, item.dataset.speed);
 
-
 let stopp = setInterval(function () {
   typejss();
 }, itemm.dataset.speed);
-
 
 let stoppp = setInterval(function () {
   typejsss();
 }, itemmm.dataset.speed);
 
-
-
-
+let stopppp = setInterval(function () {
+  typejssss();
+}, itemmmm.dataset.speed);
