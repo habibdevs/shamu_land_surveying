@@ -800,85 +800,116 @@ h6.title02 {
 .copyright-text {
   margin: 0;
 }
-@media (max-width: 991px) {
-  .site-footer [class^="col-"] {
-    margin-bottom: 0px;
-  }
+
+img {
+  max-width: 100%;
+  height: auto;
 }
-@media (max-width: 767px) {
-  .site-footer {
-    padding-bottom: 0;
-  }
-  .site-footer .copyright-text,
-  .site-footer .social-icons {
-    text-align: center;
-  }
-}
-.social-icons {
-  padding-left: 0;
-  margin-bottom: 0;
+
+ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+.contact-area {
+  border-bottom: 1px solid #353c46;
+}
+
+.contact-content p {
+  font-size: 15px;
   margin: 10px 0 0 0;
+  position: relative;
 }
-.social-icons li {
+
+.contact-content .underline::after {
+  background: #353c46;
+  bottom: -30px;
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  width: 80%;
+}
+
+.contact-content h6 {
+  color: #8b9199;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.contact-content span {
+  color: #353c47;
+  margin: 0 10px;
+}
+
+.contact-social {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.contact-social > ul {
+  display: inline-flex;
+}
+
+.contact-social ul li a {
+  border: 1px solid #8b9199;
+  color: #8b9199;
   display: inline-block;
-  margin-bottom: 4px;
+  height: 40px;
+  margin: 0 10px;
+  padding-top: 7px;
+  transition: all 0.4s ease 0s;
+  width: 40px;
 }
-.social-icons li.title {
-  margin-right: 15px;
-  text-transform: uppercase;
-  color: #96a2b2;
-  font-weight: 700;
-  font-size: 13px;
+
+.contact-social ul li a:hover {
+  border: 1px solid #fab702;
+  color: #fab702;
 }
-.social-icons a {
-  background-color: #eceeef;
-  color: #818a91;
-  font-size: 16px;
-  display: inline-block;
-  line-height: 44px;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  margin-right: 8px;
-  border-radius: 100%;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+
+.contact-content img {
+  max-width: 210px;
 }
-.social-icons a:active,
-.social-icons a:focus,
-.social-icons a:hover {
+.footer-heading {
+  margin-top: 20px;
   color: #fff;
-  background-color: #29aafe;
 }
-.social-icons.size-sm a {
-  line-height: 34px;
-  height: 34px;
-  width: 34px;
-  font-size: 14px;
+.footer-section {
+  background: #23272d;
+  color: #ffffffb8;
 }
-.social-icons a.facebook:hover {
-  background-color: #3b5998;
+.chamber {
+  justify-content: center;
+  background-color: #0a6e1b;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: inline-block;
+  padding: 5px 5px;
+  color: #fff;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 25px;
+  margin-bottom: 44px;
 }
-.social-icons a.twitter:hover {
-  background-color: #00aced;
+footer p {
+  padding: 40px 0;
+  text-align: center;
 }
-.social-icons a.linkedin:hover {
-  background-color: #007bb6;
+
+footer img {
+  width: 44px;
 }
-.social-icons a.dribbble:hover {
-  background-color: #ea4c89;
-}
-@media (max-width: 767px) {
-  .social-icons li.title {
-    display: block;
-    margin-right: 0;
-    font-weight: 600;
-  }
-}
+
 .office {
   text-align: center;
+}
+.office-number {
+  margin-top: 0px;
 }
 .office h5 {
   justify-content: center;
@@ -908,13 +939,13 @@ h6.title02 {
   padding: 5px 5px;
   color: #fff;
   text-align: center;
-  margin-top: 74px;
+  margin-top: 0px;
 }
 .office p {
   margin-left: -100px;
   text-align: center;
   line-height: 10px;
-  margin-top: 10px;
+  margin-top: 12px;
   margin-left: auto;
 }
 .office1 h6 {
@@ -949,7 +980,7 @@ h6.title02 {
 }
 .fa-phone {
   font-weight: 900;
-  margin-right: 25px;
+  margin-right: 12px;
   position: relative;
   z-index: +9999;
 }
@@ -957,38 +988,38 @@ h6.title02 {
 .fa-phone::after {
   position: absolute;
   content: "";
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   background-color: #0a6e1b;
-  left: -8px;
+  left: -5px;
   z-index: -1;
-  top: -8px;
+  top: -4px;
 }
 .fa-envelope {
   font-weight: 900;
-  margin-right: 25px;
+  margin-right: 12px;
   position: relative;
   z-index: +9999;
 }
 .fa-envelope::after {
   position: absolute;
   content: "";
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   background-color: #0a6e1b;
-  left: -8px;
+  left: -5px;
   z-index: -1;
-  top: -8px;
+  top: -6px;
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
@@ -1009,6 +1040,28 @@ h6.title02 {
   }
   .carousel-item {
     height: 30vh;
+  }
+  .contact-content p {
+    font-size: 15px;
+    margin: 12px 0 20px 0;
+    position: relative;
+  }
+  .contact-content p::after {
+    background: transparent;
+    height: 0px;
+    left: 0%;
+    width: 0%;
+  }
+  .contact-content img {
+    max-width: 38%;
+  }
+  .footer-section {
+    padding: 25px 0;
+    /* min-height: 100vh; */
+  }
+  .footer-heading {
+    margin-top: 20px;
+    color: #fff;
   }
   header {
     padding: 0px 0px;
@@ -1093,7 +1146,7 @@ h6.title02 {
     color: yellow;
     font-size: 11px;
     margin-left: 0px;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .banner-section .banner-text h1 {
     font-size: 34px;
@@ -1201,12 +1254,25 @@ h6.title02 {
     position: absolute;
     margin-left: 100px;
   }
+  .chamber {
+    justify-content: center;
+    background-color: #0a6e1b;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: inline-block;
+    padding: 5px 5px;
+    color: #fff;
+    text-align: center;
+  }
   .office h5 {
     left: 30%;
     font-size: 18px;
   }
   .office h6 {
-    margin-top: 60px;
+    margin-top: 20px;
     font-size: 14px;
   }
   .office1 h6 {
@@ -1336,6 +1402,11 @@ h6.title02 {
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
+  }
+  .banner-section .banner-text {
+    position: absolute;
+    top: 126px;
+    left: 246px;
   }
   .navbar-toggler {
     margin-left: 300px;
@@ -1536,11 +1607,7 @@ h6.title02 {
     margin-right: 10px;
     text-align: right;
   }
-  .banner-section .banner-text {
-    position: absolute;
-    top: 170px;
-    left: 60px;
-  }
+
   .banner-section .banner-text h1 {
     font-size: 40px;
     display: block;
@@ -1564,5 +1631,18 @@ h6.title02 {
     position: relative;
     top: 0;
     z-index: 1020;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .site-footer h1,
+  p {
+    text-align: left;
+  }
+  .office h5 {
+    left: 63%;
+  }
+  .office1 h6 {
+    margin-left: 6%;
+    margin-top: 75px;
   }
 }
