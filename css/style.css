@@ -1344,6 +1344,51 @@ footer img {
   }
 }
 
+@media (min-width: 320px) and (max-width: 440px) {
+  .navbar-toggler {
+    margin-left: 40% !important;
+  }
+}
+@media (min-width: 440px) and (max-width: 508px) {
+  .navbar-toggler {
+    margin-left: 50% !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  h2.title01 {
+    position: relative;
+    text-align: center;
+    color: green;
+    font-weight: normal;
+    line-height: 1.8em;
+    width: 190px;
+    padding: 0;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom: 5px solid red;
+    background-color: azure;
+    margin: 23px auto 0;
+}
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbar-toggler {
+    margin-left: 446px !important;
+  }
+  .video-part video {
+    border-radius: 2%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+    padding: 0 50px;
+    margin-left: 105px;
+  }
+}
+@media (min-width: 668px) and (max-width: 991px) {
+  .navbar-toggler {
+    margin-left: auto;
+  }
+}
 @media (min-width: 1080px) and (max-width: 1710px) {
   .banner-section .banner-text {
     left: 640px !important;
