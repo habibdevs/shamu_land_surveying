@@ -1384,7 +1384,7 @@ footer img {
     margin-left: 105px;
   }
 }
-@media (min-width: 668px) and (max-width: 991px) {
+@media (min-width: 668px) and (max-width: 992px) {
   .navbar-toggler {
     margin-left: auto;
   }
